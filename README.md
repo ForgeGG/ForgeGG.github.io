@@ -9,4 +9,5 @@ Pour faire fonctionner le site correctement, il faut :
   
   - Enfin, cliquer sur le cadena à gauche du lien, ensuite aller dans les paramètres du site, puis dans "contenu non sécurisé" et mettre "autorisé".
  
-  (Pour plus de détails, cliquer sur ce lien "https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/mixed-content.html?lang=fr-FR"
+  (Pour plus de détails, cliquer sur ce lien  
+  "https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/mixed-content.html?lang=fr-FR")
