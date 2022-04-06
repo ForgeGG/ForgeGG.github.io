@@ -1,0 +1,50 @@
+{
+  "name": "project-de-la-mort",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "proxy":"lcp --proxyUrl https://api.twitter.com/2/tweets/search/recent"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~13.2.0",
+    "@angular/common": "~13.2.0",
+    "@angular/compiler": "~13.2.0",
+    "@angular/core": "~13.2.0",
+    "@angular/forms": "~13.2.0",
+    "@angular/platform-browser": "~13.2.0",
+    "@angular/platform-browser-dynamic": "~13.2.0",
+    "@angular/router": "~13.2.0",
+    "bootstrap": "^5.1.3",
+    "fast-json": "^2.1.1",
+    "jquery": "^3.6.0",
+    "jquery-ui-dist": "^1.13.1",
+    "ngx-tweet": "^2.0.3",
+    "rxjs": "~7.5.0",
+    "rxjs-compat": "^6.6.7",
+    "spotify-api.js": "^9.0.3",
+    "spotify-web-api-js": "^1.5.2",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~13.2.5",
+    "@angular/cli": "~13.2.5",
+    "@angular/compiler-cli": "~13.2.0",
+    "@types/jasmine": "~3.10.0",
+    "@types/jquery": "^3.5.14",
+    "@types/node": "^12.20.47",
+    "angular-cli-ghpages": "^1.0.0",
+    "jasmine-core": "~4.0.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.1.0",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "typescript": "~4.5.2"
+  }
+}
