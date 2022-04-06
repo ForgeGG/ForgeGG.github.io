@@ -1,0 +1,65 @@
+.all{
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000919;
+  position: relative;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+  .cards .card .content{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .main-card .cards .card{
+    background: #624B4B;
+    width: auto;
+    margin: 20px 0 10px 0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: rgba(222, 67, 0, 0.4) 5px 5px, rgba(222, 67, 0, 0.3) 10px 10px, rgba(222, 67, 0, 0.2) 15px 15px, rgba(222, 67, 0, 0.1) 20px 20px, rgba(222, 67, 0, 0.05) 25px 25px;
+    transition: all 0.4s ease;
+  }
+
+  .main-card .cards .card:hover{
+      transform: translateY(-15px);
+      box-shadow:rgba(222, 67, 0, 0.75) 5px 5px;
+  }
+
+
+
+ .main-card .cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 768px){
+    .main-card .cards .card{
+      margin: 20px 0 10px 0;
+      width: auto;
+    }
+  }
+
+  @media (max-width: 600px){
+    .main-card .cards .card{
+      width: auto;
+    }
+  }
+
+
+ngx-tweet{
+
+}

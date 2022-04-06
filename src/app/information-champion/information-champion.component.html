@@ -1,0 +1,65 @@
+<div class="all">
+  <div class="container">
+
+       <div class="leftbox">
+
+          <div id="carouselExampleControls-2" class="carousel_slide" data-bs-ride="carousel">
+            <!--Le carousel sur les skins du champions-->
+             <div class="carousel-inner">
+                  <!--Le carousel change avec un interval grâce à data-bs-interval -->
+                 <div class="carousel-item" data-bs-interval="4000" *ngFor="let skin of skins; let index = index" [class.active]="index == 0">
+                   <figure><img class="blipblop" id="img_carrou" src={{skin}} class="d-block w-100" alt="..."></figure>
+                 </div>
+             </div>
+
+           </div>
+          <!--Le nom du champion en bas du carousel-->
+           <div class="box_titlechamp">
+              <h2 id="nomChampion"></h2>
+           </div>
+       </div>
+
+       <div class="rightbox">
+
+          <!--L'histoire du champion à droite en haut du carousel-->
+           <div class="box_lorechamp">
+             <p id="loreChamp"></p>
+           </div>
+
+
+           <!--Les images des sorts avec la description lors du clic sur l'image-->
+           <div class="about_img">
+
+             <div class="spell_imgp">
+               <figure><img id="passive" (click)="afficherMasquer(0)" alt="Passive"/></figure>
+             </div>
+             <div class="spell_img">
+               <figure><img id="QSpell" (click)="afficherMasquer(1)" alt="QSpell"/></figure>
+             </div>
+             <div class="spell_img">
+               <figure><img id="WSpell" (click)="afficherMasquer(2)" alt="WSpell"/></figure>
+             </div>
+             <div class="spell_img">
+               <figure><img id="ESpell" (click)="afficherMasquer(3)"alt="ESpell"/></figure>
+             </div>
+             <div class="spell_img">
+               <figure><img id="RSpell" (click)="afficherMasquer(4)" alt="RSpell"/></figure>
+             </div>
+
+           </div>
+
+           <!--La description du sort -->
+          <div class="box_descrsortchamp" id="desc"  style="display: none;">
+            <div class="box_nomSpell">
+               <h3 id="nomSpell">nomSpell</h3>
+            </div>
+            <p id="spellDesc"></p>
+          </div>
+
+       </div>
+
+
+
+
+  </div>
+</div>

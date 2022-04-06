@@ -1,0 +1,179 @@
+.all{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #000919;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  margin-right: 8%;
+  margin-left: 8%;
+  box-shadow: rgba(222, 67, 0, 0.4) 5px 5px, rgba(222, 67, 0, 0.3) 10px 10px, rgba(222, 67, 0, 0.2) 15px 15px, rgba(222, 67, 0, 0.1) 20px 20px, rgba(222, 67, 0, 0.05) 25px 25px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px){
+  .container{
+    display: inline-block;
+  }
+}
+
+
+/*---------------------LEFT BOX---------------------*/
+
+
+.leftbox{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.carousel_slide{
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+
+#img_carrou{
+  border-radius: 15px;
+}
+
+#nomChampion{
+  text-shadow:0 0 2px #FF2C00,0 0 30px #FF2C00,0px 0px 5px #FF2C00, 0 0 150px #FF2C00;
+  color:#FF2C00;
+  font-size: 50px;
+}
+
+#nomSpell{
+  text-shadow:0 0 2px #FF2C00,0 0 30px #FF2C00,0px 0px 5px #FF2C00;
+  color:#CC2C00;
+  font-size: 25px;
+  text-decoration: underline;
+}
+/*---------------------RIGHT BOX---------------------*/
+
+
+.rightbox{
+  display: wrap;
+  align-items: center;
+  margin: 10px;
+}
+
+.box_lorechamp{
+  position: relative;
+  padding: 10px 20px;
+  background: rgb(0, 10, 20);
+  color: #DDD;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #DE4300, #001020);
+}
+
+.box_descrsortchamp{
+  position: relative;
+  padding: 10px 20px;
+  background: rgb(0, 10, 20);
+  color: #DDD;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #DE4300, #001020);
+}
+
+/*---------------------IMG BARRE DE SORT---------------------*/
+.about_img{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px){
+  .about_img{
+    display: inline-block;
+  }
+}
+
+.spell_imgp{
+  margin-right: 50px;
+  padding-top: 20px;
+  transition: 0.5s;
+}
+
+.spell_imgp:hover{
+  cursor: pointer;
+  transform: translateY(-10px);
+  margin-left: 5px;
+}
+
+.spell_img{
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+}
+
+.spell_img:hover{
+  cursor: pointer;
+  transform: translateY(-10px);
+  margin-left: 5px;
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+#passive:hover{
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+
+#passive{
+  width: 70px;
+  height: 70px;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #DE4300, #001020);
+}
+
+#QSpell{
+  width: 100px;
+  height: 100px;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #DE4300, #001020);
+}
+
+#WSpell{
+  width: 100px;
+  height: 100px;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #DE4300, #001020);
+}
+#ESpell{
+  width: 100px;
+  height: 100px;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #DE4300, #001020);
+}
+#RSpell{
+  width: 100px;
+  height: 100px;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #DE4300, #001020);
+}

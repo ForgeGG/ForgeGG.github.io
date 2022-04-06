@@ -1,0 +1,42 @@
+<div class="all">
+  <div class="container">
+    <div class="main-card">
+      <!--Je place mes tweets dans des card-->
+      <div class="cards">
+
+          <div class="card">
+            <!--Pour afficher mes tweets j'utilise le composent ngx-tweet qui me permet d'afficher un tweet avec son id-->
+            <div class="content" *ngIf="affiche">
+              <!--Si la variable affiche est true, j'affiche le tweet sinon je met qu'il charge-->
+              <div id="tweet" *ngIf="affiche; else elseBlock">
+                <ngx-tweet [tweetId]="idTweet1"></ngx-tweet>
+              </div>
+              <ng-template #elseBlock><p>chargement du tweet...</p></ng-template>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="content" *ngIf="affiche">
+              <div id="tweet" *ngIf="affiche; else elseBlock2">
+                <ngx-tweet [tweetId]="idTweet2"></ngx-tweet>
+              </div>
+              <ng-template #elseBlock2><p>chargement du tweet...</p></ng-template>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="content" *ngIf="affiche">
+              <div id="tweet" *ngIf="affiche; else elseBlock3">
+                <ngx-tweet [tweetId]="idTweet3"></ngx-tweet>
+              </div>
+              <ng-template #elseBlock3><p>chargement du tweet...</p></ng-template>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</div>

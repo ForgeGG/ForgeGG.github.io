@@ -1,0 +1,141 @@
+header{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+}
+/*----------------------------Carousel CAPTION-----------------*/
+.carousel-caption{
+  top: 0;
+  bottom: auto;
+}
+
+/*----------------------------TITRE----------------------------*/
+.title_placement{
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+
+.forge{
+  font-size: 150px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #FF2C00 0%, #624B4B 25%, #000000 50%, #624B4B 75%, #FF2C00 100%);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  100%{
+    background-position: 400%;
+  }
+}
+
+/*---------------------BARRE DE RECHERCHE---------------------*/
+.barre_search{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.box{
+  max-width: 400px;
+  width: 100%;
+}
+
+.box .search_box{
+  position: relative;
+  height: 50px;
+  margin: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+#check:checked ~ .search_box{
+  max-width: 450px;
+}
+
+.search_box input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  background: #FFF;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.search_box .icon{
+  position: absolute;
+  right: -25px;
+  top: -1px;
+  width: 55px;
+  background: #624B4B;
+  background-image: url(../../assets/enclume_icon.png);
+  background-size: contain;
+  height: 102%;
+  text-align: center;
+  transition: all 0.1s ease;
+  line-height: 50px;
+  border-radius: 0 25px 25px 0;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.search_box .icon:hover{
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border: 2px solid #111;
+  background: #FF2C00;
+  background-image: url(../../assets/enclume_icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#search-text:hover{
+  border: 2px solid #111;
+}
+
+
+#check:checked ~ .search_box .icon{
+
+}
+
+#check{
+  display: none;
+}
+
+.carousel-inner >.item{
+  position: relative;
+  display: none;
+  -webkit-transition: 1s ease-in-out left;
+  -moz-transition: 1s ease-in-out left;
+  -o-transition: 1s ease-in-out left;
+  transition: 1s ease-in-out left;
+}
+
+
+
+
+
+@media (min-width: 768px){
+  .barre_search{
+      position: relative;
+      top: -50%;
+  }
+
+}
+
+@media (max-width: 768px){
+  .barre_search{
+      background: #624B4B;
+  }
+  .title_placement{
+    font-size:15;
+  }
+}
+/*---------------------FIN BARRE DE RECHERCHE---------------------*/

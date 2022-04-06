@@ -1,0 +1,53 @@
+<header>  
+  
+  <div id="carouselExampleControls" class="carousel slide"  data-bs-touch="false" data-bs-interval="false">
+    <!--Le carrousel qui affiche tous les images des champions-->
+    <div class="carousel-inner">
+      <!--Utilisation d'un ngFor qui permet de reproduire tous ce qu'il ya dans la div x nombre de fois (ici x=le nombre de champion)-->
+      <div class="carousel-item" *ngFor="let skin of skins; let index = index" [class.active]="index == 0" >
+        <!--Affichage du skin(la peau) du champion désiré -->
+        <img  id="img_champ" src={{skin}} class="d-block w-100" alt="..." >
+        <div class="carousel-caption d-none d-md-block">
+          <!--Affichage du titre de notre site-->  
+          <div class="title_placement">
+            <div class="forge">
+              Forge.GG
+            </div>
+          </div>
+          
+        </div>
+      </div>
+     
+    </div>
+    <!--les deux boutons pour défiler notre carrousel avec data-bs-target pour dire que c'est ce carousel et data-bs-slide pour
+    dire que c'est le bouton precedent, il y a aussi une fonction qui est activé lors du clique du bouton pour changer les informations fournis 
+    aux différents api utilisés-->
+    <button class="carousel-control-prev" type="button" (click)="carouselSlide()" data-bs-target="#carouselExampleControls" data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" (click)="carouselSlide()" data-bs-target="#carouselExampleControls" data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <!--La barre de recherche qui est constitué d'un input et d'un bouton-->
+    <div class="barre_search">
+      <div class="box">
+        <input type="checkbox" id="check">
+        <div class="search_box">
+          <!--le input possède une action lorsqu'on appuie sur la touche Entrer-->
+          <input #box type="text" id="search-text" placeholder="Effectuez une recherche d'un champion..."
+          (keyup.enter)="onEnter(box.value)"/>
+          <!--le bouton possède une action lors d'un clic-->
+          <button type="button" (click)="onEnter(box.value)">
+            <label for="check" class="icon">
+            </label>
+          </button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</header>
